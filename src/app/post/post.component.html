@@ -1,14 +1,13 @@
-<h2>Nature</h2>
+<h2>{{ post?.title }}</h2>
 
 <p>
-    Nature is a british weekly scientific journal founded and based in London,
-    England. As a multidisciplinary publication, Nature features peer-reviewed research from a variety of academic
-    disciplines, mainly in science and technology
+    {{ post?.description }}
 </p>
-<img style="height: 35%; width: 35%;"
-    src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Zugpsitze_mountain.jpg?crop=0,176,3008,1654&wid=4000&hei=2200&scl=0.752">
+<img
+    src= "{{ post?.imagePath }}"
+    class="img-responsive">
 <br>
-<p>Author: test@test.com</p>
-<p>Date: 13th Jan 2022</p>
+<p>Author: {{ post?.auther }}</p>
+<p>Date: {{ post?.dateTimeCreated }}</p>
 <button>Edit</button> | <button>Delete</button>
 <hr>
